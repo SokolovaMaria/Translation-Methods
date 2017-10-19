@@ -61,3 +61,6 @@ Run:<br>
 ```
 If the array declaration is correct, `.png` file with parse-tree will be created and opened<br>
 otherwise error will be displayed at stderr.
+
+[***Graphviz***](http://www.graphviz.org) is used for parse-trees visualization. <br>
+It should be installed in /usr/lib
