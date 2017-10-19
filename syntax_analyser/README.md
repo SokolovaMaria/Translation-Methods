@@ -13,7 +13,8 @@
 12. `NT -> [a-z,A-Z,0-9]NT `
 
 
-## Grammar with removed right-branchings (rules for `NAMES ->` and `DIM ->`):
+## Grammar with removed right-branchings:
+(improved rules for `NAMES ->` and `DIM ->`)
 
 1. `S -> var ARR`
 2. `ARR -> NAMES : ARRTYPE; ARR`
