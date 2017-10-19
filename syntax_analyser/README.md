@@ -1,4 +1,4 @@
-# Grammar for Pascal array declarations
+## Grammar for Pascal array declarations
 1. `S -> var ARR`
 2. `ARR -> NAMES : ARRTYPE; ARR`
 3. `ARR -> \epsilon`
@@ -31,7 +31,7 @@
 13. `N -> [0-9]N `
 14. `NT -> [a-z,A-Z,0-9]NT `
 
-## FIRST и FOLLOW  for non-terminals. 
+## FIRST & FOLLOW  for non-terminals. 
 
 `c` - [A-Za-z] <br>
 `n` - [1 - 9]
