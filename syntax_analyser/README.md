@@ -43,7 +43,7 @@ NAMES  | `c`|`,` `:`
 NAMES'    | `,` `\epsilon`     |`:`
 ARRTYPE   | `array`|`;`
 ARRTYPE'       | `array` `c`      |`;`
-DIM       | `n`      |`..``]`
+DIM       | `n`      |`..` `]`
 DIM'       | `,` `\epsilon`      |`]`
-N       | `n`      |`..``]`
+N       | `n`      |`..` `]`
 NT       | `c`      |`,` `:` `;`
