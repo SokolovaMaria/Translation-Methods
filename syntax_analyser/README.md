@@ -1,4 +1,4 @@
-# Грамматика
+# Grammar for Pascal array declarations
 1. `S -> var ARR`
 2. `ARR -> NAMES : ARRTYPE; ARR`
 3. `ARR -> \epsilon`
@@ -13,7 +13,7 @@
 12. `NT -> [a-z,A-Z,0-9]NT `
 
 
-## Устранение правового ветвления:
+## Grammar with removed right-branchings (rules for `NAMES ->` and `DIM ->`):
 
 1. `S -> var ARR`
 2. `ARR -> NAMES : ARRTYPE; ARR`
@@ -30,12 +30,12 @@
 13. `N -> [0-9]N `
 14. `NT -> [a-z,A-Z,0-9]NT `
 
-## FIRST и FOLLOW  для нетерминалов. 
+## FIRST и FOLLOW  for non-terminals. 
 
 `c` - [A-Za-z] <br>
 `n` - [1 - 9]
 
-Нетерминал | FIRST    | FOLLOW
+non-terminal | FIRST    | FOLLOW
 -----------|----------|-------
 S          | `var`      |`$`
 ARR         | `c` `\epsilon`     |`$`
@@ -47,3 +47,16 @@ DIM       | `n`      |`..` `]`
 DIM'       | `,` `\epsilon`      |`]`
 N       | `n`      |`..` `]`
 NT       | `c`      |`,` `:` `;`
+
+## Usage
+
+Go to ***cmake-build/*** folder<br>
+Put the string with Pascal array declaration into ***input.txt*** <br>
+Run:<br>
+```
+~cmake ..
+~make
+~./syntax_analyser
+```
+If the array declaration is correct, `.png` file with parse-tree will be created and opened<br>
+otherwise error will be displyed at stderr.
