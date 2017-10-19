@@ -32,7 +32,7 @@
 
 ## FIRST и FOLLOW  для нетерминалов. 
 
-`c` - [A-Za-z]
+`c` - [A-Za-z] <br>
 `n` - [1 - 9]
 
 Нетерминал | FIRST    | FOLLOW
@@ -40,10 +40,10 @@
 S          | `var`      |`$`
 ARR         | `c` `\epsilon`     |`$`
 NAMES  | `c`|`,` `:`
-NAMES'    | `,` ,`\epsilon`     |`:`
+NAMES'    | `,` `\epsilon`     |`:`
 ARRTYPE   | `array`|`;`
-ARRTYPE'       | `array`, `c`      |`;`
-DIM       | `n`      |`..`,`]`
-DIM'       | `,`, `\epsilon`      |`]`
-N       | `n`      |`..`,`]`
-NT       | `c`      |`,`, `:`, `;`
+ARRTYPE'       | `array` `c`      |`;`
+DIM       | `n`      |`..``]`
+DIM'       | `,` `\epsilon`      |`]`
+N       | `n`      |`..``]`
+NT       | `c`      |`,` `:` `;`
