@@ -60,4 +60,4 @@ Run:<br>
 ~./syntax_analyser
 ```
 If the array declaration is correct, `.png` file with parse-tree will be created and opened<br>
-otherwise error will be displyed at stderr.
+otherwise error will be displayed at stderr.
