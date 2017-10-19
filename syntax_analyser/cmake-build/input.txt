@@ -1,0 +1,2 @@
+var x, y :             array [1 .. 45] of array [3 .. 7] of array [1 .. 567]  of string;
+    Pascal : array [1.. 8999, 1 .. 45, 1 .. 67] of nodes;
