@@ -1,0 +1,15 @@
+let func1 a, b =
+    let func2 c =
+        let func3 d, e, f =
+            let func4 g, g1 =
+                a / g1 in
+            func4 (d + e, func4(e, f)) in
+        func3(c, func3(k, t, func3(12, 41, c)), func4(225, 6)) in
+    func2 (a + b);;
+
+val square : int -> int
+let square x =
+    x * x;;
+
+square(square(7));;
+func1(6, func1(135, 4535));;
