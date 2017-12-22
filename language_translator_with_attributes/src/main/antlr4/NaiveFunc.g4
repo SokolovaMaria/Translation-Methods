@@ -88,15 +88,6 @@ funcCallArgs returns [List<String> fcArgs]
     }
     ;
 
-variable
-    : ID
-    ;
-
-constant
-    : INT
-    | STRING
-    | BOOL
-    ;
 
 args returns [List<String> names]
     @init {
@@ -123,6 +114,18 @@ var returns [AbstractMap.SimpleEntry<String, String> map]
     }
     ;
 
+
+variable
+    : ID
+    ;
+
+constant
+    : INT
+    | STRING
+    | BOOL
+    ;
+
+    
 type
     : INT_T
     | STRING_T
