@@ -1,0 +1,6 @@
+(*Is prime*)
+let notdivisor(d, x) =
+    (d * d > x) or ((x % d) != 0 and (notdivisor(d + 1, x)));;
+
+let isprime: bool (x: int) =
+    ((x == 1) or (notdivisor(2, x)));;
